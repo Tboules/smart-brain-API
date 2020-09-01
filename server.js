@@ -3,8 +3,8 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
 const knex = require("knex");
-const signin = require("./controlers/signin");
-const register = require("./controlers/register");
+const signin = require("./controlers/Signin");
+const register = require("./controlers/Register");
 const Id = require("./controlers/Id");
 const ImageHandler = require("./controlers/ImageHandler");
 

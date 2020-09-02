@@ -3,10 +3,10 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt-nodejs");
 const cors = require("cors");
 const knex = require("knex");
-const signin = require("./controlers/Signin");
-const register = require("./controlers/Register");
-const Id = require("./controlers/Id");
-const ImageHandler = require("./controlers/ImageHandler");
+const signin = require("./controllers/Signin");
+const register = require("./controllers/Register");
+const Id = require("./controllers/Id");
+const ImageHandler = require("./controllers/ImageHandler");
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 

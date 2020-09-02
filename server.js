@@ -8,11 +8,12 @@ const register = require("./controlers/Register");
 const Id = require("./controlers/Id");
 const ImageHandler = require("./controlers/ImageHandler");
 
+process.env.NODE_TLS_REJECT_UNAUTHORIEZED = 0;
+
 const db = knex({
   client: "pg",
   connection: {
-    //connectionString: process.env.DATABASE_URL,
-    host: "postgresql-metric-28264",
+    connectionString: process.env.DATABASE_URL,
     ssl: true,
   },
 });

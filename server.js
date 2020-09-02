@@ -11,7 +11,8 @@ const ImageHandler = require("./controlers/ImageHandler");
 const db = knex({
   client: "pg",
   connection: {
-    connectionString: process.env.DATABASE_URL,
+    //connectionString: process.env.DATABASE_URL,
+    host: "postgresql-metric-28264",
     ssl: true,
   },
 });

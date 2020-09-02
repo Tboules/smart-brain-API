@@ -8,7 +8,7 @@ const register = require("./controlers/Register");
 const Id = require("./controlers/Id");
 const ImageHandler = require("./controlers/ImageHandler");
 
-process.env.NODE_TLS_REJECT_UNAUTHORIEZED = 0;
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 const db = knex({
   client: "pg",

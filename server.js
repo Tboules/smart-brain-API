@@ -11,10 +11,8 @@ const ImageHandler = require("./controlers/ImageHandler");
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-metric-28264",
-    user: "postgres",
-    password: "test",
-    database: "smart-brain",
+    host: process.env.DATABASE_URL,
+    ssl: true,
   },
 });
 
